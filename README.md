@@ -1,7 +1,7 @@
 SubMonkey
 ==============
 
-This bundle lets you to use the multi-platform editor [Sublime Text](http://www.sublimetext.com) as an IDE for the [monkey programming language](http://www.monkey-x.com). It is based on [monkey.tmbundle](https://github.com/gingerbeardman/monkey.tmbundle).
+This bundle lets you to use the multi-platform editor [Sublime Text](http://www.sublimetext.com) as an IDE for the [monkey programming language](http://www.monkey-x.com). It is based on [monkey.sublime](https://github.com/gingerbeardman/monkey.sublime), origionaly based on [monkey.tmbundle](https://github.com/gingerbeardman/monkey.tmbundle).
 
 Origionaly created by Matt Sephton, [http://www.gingerbeardman.com/monkey/](http://www.gingerbeardman.com/monkey/)
 
@@ -10,6 +10,7 @@ Shamelessly Copied/Adoped, updated, and renamed by Russell King, [http://rkpweb.
 ## Features
 
 **Easy Installation**
+
 With Package Controll for Sublime Text, it is quick and simple to install the bundle
 
 **Syntax Highlighting**  
