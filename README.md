@@ -10,7 +10,6 @@ Shamelessly Copied/Adoped, updated, and renamed by Russell King, [http://rkpweb.
 ## Features
 
 **Easy Installation**
-
 With Package Controll for Sublime Text, it is quick and simple to install the bundle
 
 **Syntax Highlighting**  
