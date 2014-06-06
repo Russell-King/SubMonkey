@@ -9,6 +9,9 @@ Shamelessly Copied/Adoped, updated, and renamed by Russell King, [http://rkpweb.
 
 ## Features
 
+**Easy Installation**
+With Package Controll for Sublime Text, it is quick and simple to install the bundle
+
 **Syntax Highlighting**  
 Easily see keywords, constants, strings, comments, numbers and functions/classes/methods in your code
 
@@ -28,11 +31,11 @@ Navigate around your source using the index of functions, classes and methods
 
 ## Installation
 
-Download/Install the Package Manager for sublime text instructions here: [https://sublime.wbond.net/installation](https://sublime.wbond.net/installation)
+Instructions for downloading and installing Package Manager for Sublime Text can be found here: [https://sublime.wbond.net/installation](https://sublime.wbond.net/installation)
 
-Once it is installed, use Preferences->Package Control in sublime, and use the command "Add Repository" It will require a URL. Simply use the url of this repository [https://github.com/Russell-King/SubMonkey](https://github.com/Russell-King/SubMonkey) WITHOUT the ".git".
+Once installed, use Preferences->Package Control in Sublime, and click on or type "Add Repository". Enter the URL of the repository [https://github.com/Russell-King/SubMonkey](https://github.com/Russell-King/SubMonkey) at the bottom of editor.
 
-Now enter the "Install Package" command and install monkey.sublime.
+Now, once again use Preferences->Package Control and click on or type "Install Package". Type "SubMonkey" to find the package quickly and click to install. Restart Sublime Text and you are ready to get coding!
 
 ### Adding monkey to your PATH
 There are two paths in Mac OS X, the $PATH used by Terminal/shells and the Environment PATH as used by Windowed apps.  
@@ -65,34 +68,36 @@ You will need to restart Mac OS X for the changes to take effect.
 
 In Linux you may need need to type "source ~/.bashrc" to load in the changes; alternatively you can restart.
 
+In Windows you can add the bin folder inside the location you installed Monkey to your PATH by going to Control Panel->System and Security->System->Advanced system settings->Environment Varibles. Under 'System varibles' find and double click on the Path varible to add the location of the bin file to the value field(e.g., C:\Monkey\bin; ). Entries should be seperated with a semicolon.
+
 ## Support
-You can talk about the bundle on the [official monkey forum](http://www.monkey-x.com/Community/)
+You can talk about the bundle on the [official Monkey forum](http://www.monkey-x.com/Community/_index_.php/)
 
 ## Requirements
 - Sublime Text 3 [http://www.sublimetext.com/3](http://www.sublimetext.com/3)
-- monkey [http://www.monkey-x.com](http://www.monkey-x.com)
+- Monkey [http://www.monkey-x.com](http://www.monkey-x.com)
 
 ## License
 monkey.sublime and SubMonkey is made available under a [Creative Commons Attribution-Share Alike 3.0 Unported License](http://creativecommons.org/licenses/by-sa/3.0).
 
 ## Changelog(SubMonkey):
 
-2014-06-06
+**2014-06-06**
 - Renamed to SubMonkey to comply with Package Control's suggested naming convention
 - Updated Desktop target build files to new Monkey syntax
 - Renamed 'Monkey - glfw.sublime-build' to 'Monkey - Desktop.sublime-build'
-- Updated README file with updated URLS and general updates
+- Updated the README file to fix/change URLS and make minor edits to the install intructions.
 
 ## Old Changelog (copied from origional and Aaron Nech's repositories):
-2014-02-15
+**2014-02-15**
 - Changed BUILD files adding cross platform support
 - Updated instructions for easier installation using Sublime Package Manager
 
-2012-05-04  
+**2012-05-04**  
 - Added DrawPoint (v50)  
 - Included current TextMate language grammar  
 
-2011-10-08  
+**2011-10-08**  
 - Added FirstNode, LastNode, NextNode, PrevNode, Exp (v45c)  
 - Added DisableKeyboard, EnableKeyboard (v45)  
 - Added ACosr, ASinr, ATan2r, ATanr, Cosr, Sinr, Tanr (v44)  
