@@ -22,7 +22,7 @@ Press the Tab key to expand to the first match after typing part of a keyword, O
 Press the Tab key to expand one keyword into one or more lines of code, subsequent presses of tab intelligently jump you through the resulting code allowing you to fill in multiple parameters with minimal key strokes
 
 **Build Systems**  
-Seperated by operating system in the tools menu and all build targets accessable from the command palette. Quickly build for the desktop with <ctrl>+B
+Seperated by operating system in the tools menu and all build targets accessable from the command palette. Quickly build for the desktop with ctrl+B
 
 **Easy Source Navigation**  
 Navigate around your source using the index of functions, classes and methods
@@ -85,9 +85,9 @@ Open the build file in Sublime Text and follow the commented text. You may have 
 
 The build system for each operating system can be found under "Tools" > "Build System". 
 
-By default Sublime will build and run the desktop target and <ctrl>+B will build in debug mode. <ctrl><shift>+B will build in release mode.
+By default Sublime will build and run the desktop target and ctrl+B will build in debug mode. ctrl+shift+B will build in release mode.
 
-Other build targets can be accessed from the Command Palette under "Tools" or (<ctrl><shift>+P). Type out your desired target(Example: "Build: IOS") and select debug or release mode.
+Other build targets can be accessed from the Command Palette under "Tools" or (ctrl+shift+P). Type out your desired target(Example: "Build: IOS") and select debug or release mode.
 
 
 
