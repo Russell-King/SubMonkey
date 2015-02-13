@@ -1,0 +1,86 @@
+{
+	"working_dir": "${project_path:${folder:${file_path}}}",
+	"file_regex": "(...*?)<([0-9]*)>",
+	"selector": "source.monkey",
+	"cmd": ["transcc_macos", "-target=Desktop_Game", "-config=Release", "-run", "\"$file\""],
+
+	"variants": 
+				[
+
+					//Builds Desktop release when <shift>-b is used
+					{
+						"cmd": ["transcc_macos", "-target=Desktop_Game", "-config=Release", "-run", "\"$file\""],
+						"name": "Run"
+					},
+
+					//HTML5 Build Varients accessed from command palette
+
+					{
+						"cmd": ["transcc_macos", "-target=Html5_Game", "-config=Debug", "-run", "\"$file\""],
+						"name": "Monkey - HTML5: Debug"
+					},
+					{
+						"cmd": ["transcc_macos", "-target=Html5_Game", "-config=Release", "-run", "\"$file\""],
+						"name": "Monkey - HTML5: Release"
+					},
+
+					//Android Build accessed from command palette
+
+					{
+						"cmd": ["transcc_macos", "-target=Android_Game", "-config=Debug", "-run", "\"$file\""],
+						"name": "Monkey - Android: Debug"
+					},
+					{
+						"cmd": ["transcc_macos", "-target=Android_Game", "-config=Release", "-run", "\"$file\""],
+						"name": "Monkey - Android: Release"
+					},
+
+					//Flash Build accessed from command palette
+
+					{
+						"cmd": ["transcc_macos", "-target=Flash_Game", "-config=Debug", "-run", "\"$file\""],
+						"name": "Monkey - Flash: Debug"
+					},
+					{
+						"cmd": ["transcc_macos", "-target=Flash_Game", "-config=Release", "-run", "\"$file\""],
+						"name": "Monkey - Flash: Release"
+					},
+
+					//iOS Build accessed from command palette
+
+					{
+						"cmd": ["transcc_macos", "-target=iOS_Game", "-config=Debug", "-run", "\"$file\""],
+						"name": "Monkey - iOS: Debug"
+					},
+					{
+						"cmd": ["transcc_macos", "-target=iOS_Game", "-config=Release", "-run", "\"$file\""],
+						"name": "Monkey - iOS: Release"
+					},
+
+					//C++ Tool Build accessed from command palette
+
+					{
+						"cmd": ["transcc_macos", "-target=C++_Tool", "-config=Debug", "-run", "\"$file\""],
+						"name": "Monkey - C++ Tool: Debug"
+					},
+					{
+						"cmd": ["transcc_macos", "-target=C++_Tool", "-config=Release", "-run", "\"$file\""],
+						"name": "Monkey - C++ Tool: Release"
+					},
+
+					//Xna Build accessed from command palette
+
+					{
+						"cmd": ["transcc_macos", "-target=Xna_Game", "-config=Debug", "-run", "\"$file\""],
+						"name": "Monkey - Xna: Debug"
+					},
+					{
+						"cmd": ["transcc_macos", "-target=Xna_Game", "-config=Release", "-run", "\"$file\""],
+						"name": "Monkey - Xna: Release"
+					},
+
+
+
+				] 
+	
+}

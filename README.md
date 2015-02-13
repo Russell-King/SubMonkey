@@ -22,7 +22,7 @@ Press the Tab key to expand to the first match after typing part of a keyword, O
 Press the Tab key to expand one keyword into one or more lines of code, subsequent presses of tab intelligently jump you through the resulting code allowing you to fill in multiple parameters with minimal key strokes
 
 **Build Systems**  
-Quick and easy build by pressing ⌘B, current build system can be set in the Tools menu
+Seperated by operating system in the tools menu and all build targets accessable from the command palette. Quickly build for the desktop with <ctrl>+B
 
 **Easy Source Navigation**  
 Navigate around your source using the index of functions, classes and methods
@@ -64,11 +64,32 @@ Assuming you have done the step above, in Terminal:
 Alternatively, you can manually edit `~/.MacOSX/environment.plist` or use the  [RCEnvironment](http://www.rubicode.com/Software/RCEnvironment/) preference pane.  
 Either way, the goal is to add your monkey/bin path to the PATH variable in your environment.
 
-You will need to restart Mac OS X for the changes to take effect.
+You will need to restart Mac OS X for the changes to take effect. Note that this second step may not work in Yosemite. See below section for instructions on getting 
 
 In Linux you may need need to type "source ~/.bashrc" to load in the changes; alternatively you can restart.
 
 In Windows you can add the bin folder inside the location you installed Monkey to your PATH by going to Control Panel->System and Security->System->Advanced system settings->Environment Varibles. Under 'System varibles' find and double click on the Path varible to add the location of the bin file to the value field(e.g., C:\Monkey\bin; ). Entries should be seperated with a semicolon.
+
+#### OSX Yosemite 
+
+Due to a change in how GUI apps access the PATH, the second step above for OSX may not work. I have created a build file that must be installed by hand for now until a better fix is found.
+
+In a terminal, type "echo $PATH" and copy the result. The line should include what we added in the first step above. ( ending in something like "/user/folder/monkey/bin")
+
+Download the build file [here](http://rkpweb.com/SubMonkey/SubMonkey%20Yosemite%20fix.zip), unzip it, and copy the build file to Sublime's user folder. This is found by going to "Sublime text" > "Preferences" > "Browse Packages..."" with sublime open.
+
+Open the build file in Sublime Text and follow the commented text. You may have to restart Sublime after this, but now the new build system will appear under tools.
+
+
+#### Building your Monkey files
+
+The build system for each operating system can be found under "Tools" > "Build System". 
+
+By default Sublime will build and run the desktop target and <ctrl>+B will build in debug mode. <ctrl><shift>+B will build in release mode.
+
+Other build targets can be accessed from the Command Palette under "Tools" or (<ctrl><shift>+P). Type out your desired target(Example: "Build: IOS") and select debug or release mode.
+
+
 
 ## Support
 You can talk about the bundle on the [official Monkey forum](http://www.monkey-x.com/Community/_index_.php/)
@@ -81,6 +102,13 @@ You can talk about the bundle on the [official Monkey forum](http://www.monkey-x
 monkey.sublime and SubMonkey is made available under a [Creative Commons Attribution-Share Alike 3.0 Unported License](http://creativecommons.org/licenses/by-sa/3.0).
 
 ## Changelog(SubMonkey):
+
+**2015-02-13**
+- Restructured build files to cut down on clutter in interface
+- Default build is now desktop_game
+- New build system to allow choosing between Debug, Release, and various platform target builds from the command palette. 
+- Created a work around for a bug caused by changes to OSX in Yosemite
+- Updated Readme to reflect new install steps and use of the build system.
 
 **2014-06-06**
 - Renamed to SubMonkey to comply with Package Control's suggested naming convention
