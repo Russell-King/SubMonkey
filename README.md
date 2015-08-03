@@ -104,6 +104,10 @@ monkey.sublime and SubMonkey is made available under a [Creative Commons Attribu
 ## Changelog(SubMonkey):
 
 **2015-02-13**
+- Added seperate build options for windows Glfw2 and Glfw3 (moar brute force solutions!)
+
+
+**2015-02-13**
 - Restructured build files to cut down on clutter in interface
 - Default build is now desktop_game
 - New build system to allow choosing between Debug, Release, and various platform target builds from the command palette. 
