@@ -76,7 +76,7 @@ Due to a change in how GUI apps access the PATH, the second step above for OSX m
 
 In a terminal, type "echo $PATH" and copy the result. The line should include what we added in the first step above. ( ending in something like "/user/folder/monkey/bin")
 
-Download the build file [here](https://dl.dropboxusercontent.com/u/1348869/Monkey/Monkey%20-%20OSX%20Yosemite%20.sublime-build), unzip it, and copy the build file to Sublime's user folder. This is found by going to "Sublime text" > "Preferences" > "Browse Packages..."
+Download the build file [here](https://dl.dropboxusercontent.com/u/1348869/Monkey/Monkey%20-%20OSX%20Yosemite%20.sublime-build) to Sublime's user folder. This is found by going to "Sublime text" > "Preferences" > "Browse Packages..."
 
 Open the build file in Sublime Text and follow the commented text. You may have to restart Sublime after this, but now the new build system will appear under tools.
 
