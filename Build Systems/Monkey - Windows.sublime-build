@@ -2,81 +2,96 @@
 	"working_dir": "${project_path:${folder:${file_path}}}",
 	"file_regex": "(...*?)<([0-9]*)>",
 	"selector": "source.monkey",
-	"cmd": ["transcc_winnt.exe", "-target=Desktop_Game", "-config=Release", "-run", "\"$file\""],
+	"cmd": ["transcc_winnt.exe", "-target=Desktop_Game_(Glfw3)", "-config=Release", "-run", "\"$file\""],
 
 	"variants": 
 				[
 
-					//Builds Desktop release when <shift>-b is used
+					//Desktop Build Varients accessed from command palette
 					{
-						"cmd": ["transcc_winnt.exe", "-target=Desktop_Game", "-config=Release", "-run", "\"$file\""],
-						"name": "Run"
+						"cmd": ["transcc_winnt.exe", "-target=Desktop_Game_(Glfw3)", "-config=Debug", "-run", "\"$file\""],
+						"name": "Desktop(Glfw3): Debug"
+					},
+
+					{
+						"cmd": ["transcc_winnt.exe", "-target=Desktop_Game_(Glfw3)", "-config=Release", "-run", "\"$file\""],
+						"name": "Desktop(Glfw3): Release"
+					},
+
+					{
+						"cmd": ["transcc_winnt.exe", "-target=Desktop_Game_(Glfw2)", "-config=Debug", "-run", "\"$file\""],
+						"name": "Desktop(Glfw2): Debug"
+					},
+
+					{
+						"cmd": ["transcc_winnt.exe", "-target=Desktop_Game_(Glfw2)", "-config=Release", "-run", "\"$file\""],
+						"name": "Desktop(Glfw2): Release"
 					},
 
 					//HTML5 Build Varients accessed from command palette
 
 					{
 						"cmd": ["transcc_winnt.exe", "-target=Html5_Game", "-config=Debug", "-run", "\"$file\""],
-						"name": "Monkey - HTML5: Debug"
+						"name": "HTML5: Debug"
 					},
 					{
 						"cmd": ["transcc_winnt.exe", "-target=Html5_Game", "-config=Release", "-run", "\"$file\""],
-						"name": "Monkey - HTML5: Release"
+						"name": "HTML5: Release"
 					},
 
 					//Android Build accessed from command palette
 
 					{
 						"cmd": ["transcc_winnt.exe", "-target=Android_Game", "-config=Debug", "-run", "\"$file\""],
-						"name": "Monkey - Android: Debug"
+						"name": "Android: Debug"
 					},
 					{
 						"cmd": ["transcc_winnt.exe", "-target=Android_Game", "-config=Release", "-run", "\"$file\""],
-						"name": "Monkey - Android: Release"
+						"name": "Android: Release"
 					},
 
 					//Flash Build accessed from command palette
 
 					{
 						"cmd": ["transcc_winnt.exe", "-target=Flash_Game", "-config=Debug", "-run", "\"$file\""],
-						"name": "Monkey - Flash: Debug"
+						"name": "Flash: Debug"
 					},
 					{
 						"cmd": ["transcc_winnt.exe", "-target=Flash_Game", "-config=Release", "-run", "\"$file\""],
-						"name": "Monkey - Flash: Release"
+						"name": "Flash: Release"
 					},
 
 					//iOS Build accessed from command palette
 
 					{
 						"cmd": ["transcc_winnt.exe", "-target=iOS_Game", "-config=Debug", "-run", "\"$file\""],
-						"name": "Monkey - iOS: Debug"
+						"name": "iOS: Debug"
 					},
 					{
 						"cmd": ["transcc_winnt.exe", "-target=iOS_Game", "-config=Release", "-run", "\"$file\""],
-						"name": "Monkey - iOS: Release"
+						"name": "iOS: Release"
 					},
 
 					//C++ Tool Build accessed from command palette
 
 					{
 						"cmd": ["transcc_winnt.exe", "-target=C++_Tool", "-config=Debug", "-run", "\"$file\""],
-						"name": "Monkey - C++ Tool: Debug"
+						"name": "C++ Tool: Debug"
 					},
 					{
 						"cmd": ["transcc_winnt.exe", "-target=C++_Tool", "-config=Release", "-run", "\"$file\""],
-						"name": "Monkey - C++ Tool: Release"
+						"name": "C++ Tool: Release"
 					},
 
 					//Xna Build accessed from command palette
 
 					{
 						"cmd": ["transcc_winnt.exe", "-target=Xna_Game", "-config=Debug", "-run", "\"$file\""],
-						"name": "Monkey - Xna: Debug"
+						"name": "Xna: Debug"
 					},
 					{
 						"cmd": ["transcc_winnt.exe", "-target=Xna_Game", "-config=Release", "-run", "\"$file\""],
-						"name": "Monkey - Xna: Release"
+						"name": "Xna: Release"
 					},
 
 
