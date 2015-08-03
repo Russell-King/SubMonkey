@@ -76,7 +76,7 @@ Due to a change in how GUI apps access the PATH, the second step above for OSX m
 
 In a terminal, type "echo $PATH" and copy the result. The line should include what we added in the first step above. ( ending in something like "/user/folder/monkey/bin")
 
-Download the build file [here](http://rkpweb.com/SubMonkey/SubMonkey%20Yosemite%20fix.zip), unzip it, and copy the build file to Sublime's user folder. This is found by going to "Sublime text" > "Preferences" > "Browse Packages..."" with sublime open.
+Download the build file [here](https://dl.dropboxusercontent.com/u/1348869/Monkey/Monkey%20-%20OSX%20Yosemite%20.sublime-build), unzip it, and copy the build file to Sublime's user folder. This is found by going to "Sublime text" > "Preferences" > "Browse Packages..."
 
 Open the build file in Sublime Text and follow the commented text. You may have to restart Sublime after this, but now the new build system will appear under tools.
 
@@ -85,14 +85,16 @@ Open the build file in Sublime Text and follow the commented text. You may have 
 
 The build system for each operating system can be found under "Tools" > "Build System". 
 
-By default Sublime will build and run the desktop target and ctrl+B will build in debug mode. ctrl+shift+B will build in release mode.
+By default Sublime will build and run the desktop(Glfw3) target with the debug option selected.
 
-Other build targets can be accessed from the Command Palette under "Tools" or (ctrl+shift+P). Type out your desired target(Example: "Build: IOS") and select debug or release mode.
+Other build targets, including release and debug options, can be accessed from the Command Palette.
 
 
 
 ## Support
 You can talk about the bundle on the [official Monkey forum](http://www.monkey-x.com/Community/_index_.php/)
+
+Feel free to contact me on git as well. Submit an issue and i'll get back to you as soon as I can.
 
 ## Requirements
 - Sublime Text 3 [http://www.sublimetext.com/3](http://www.sublimetext.com/3)
@@ -103,8 +105,14 @@ monkey.sublime and SubMonkey is made available under a [Creative Commons Attribu
 
 ## Changelog(SubMonkey):
 
-**2015-02-13**
-- Added seperate build options for windows Glfw2 and Glfw3 (moar brute force solutions!)
+**2015-08-03**
+- Added build options for Glfw2 and Glfw3.
+- Updated the Yosemite build file fix to also include Glfw2 and Glfw3. 
+- Now builds Glfw3 by default
+- Fixed long string in the Import snippet
+- Cleaned up the command palette list and removed redundent labling
+- Cleaned up/Added some folders to make the package look pretty.
+
 
 
 **2015-02-13**
